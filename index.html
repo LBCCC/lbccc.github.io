@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="lbccc">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -154,16 +154,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一步-安装Node-js"><a href="#第一步-安装Node-js" class="headerlink" title="第一步 安装Node.js"></a>第一步 安装Node.js</h2><p>这一步直接在Node.js官网上下载最新的LTS版本，安装即可<br>官网：<a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a><br>安装后打开cmd，输入以下命令<br><code>node -v</code><br>显示 <code>v12.18.2</code> 我的Node.js版本是12.18.2<br>输入以下命令<br><code>npm -v</code><br>显示 <code>6.14.5</code><br>说明Node.js以及npm都安装成功</p>
-<h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>命令行输入<br><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code> #安装淘宝的cnpm 管理器<br><code>cnpm -v</code> #查看cnpm版本</p>
-<h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>命令行输入<br><code>cnpm install -g hexo-cli</code> #安装hexo框架<br><code>hexo -v</code> #查看hexo版本</p>
-<h2 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h2><p>创建一个空文件夹，所有与个人博客相关的东西都会在这个文件夹底下，我创建的是 F:\myblog\blog-hexo<br>cmd进入该文件夹，或者可以打开文件管理器，在该文件夹的地址栏输入cmd，回车打开就会自动进入该文件夹的命令行</p>
-<h2 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h2><p>cmd进入刚刚创建的文件夹后，输入以下命令<br><code>hexo init</code><br>这个过程需要通过git在github上克隆仓库，以及使用npm安装相关依赖<br>首先需要保证电脑上安装了git，由于我刚开始总是报下面的错误<br><code>fatal: unable to access &#39;https://github.com/hexojs/hexo-starter.git/&#39;: Failed to connect to github.com port 443</code><br>一寻思，应该是我的网访问github有问题，机智的我给git挂了个http代理，就成功了<br><code>git config --global http.proxy http://127.0.0.1:*****(代理端口号）</code>  #挂了个代理<br>git的步骤成功了，后来又报了个什么错我忘了记录了，大致意思就是npm获取依赖包时超时还是怎么样，将npm源改为淘宝的源即可<br><code>npm config set registry https://registry.npm.taobao.org</code></p>
-<p>记住每次init失败都要把文件夹清空，init操作需要在一个空文件夹下进行<br>修改了以上设置后再 <code>hexo init</code> 就成功了，我在安装过程中遇到的问题主要都在这一步</p>
-<h2 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h2><p>本地启动服务，命令行输入<br><code>hexo s</code><br>服务开启后，在浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 即可访问</p>
-<h2 id="第七步"><a href="#第七步" class="headerlink" title="第七步"></a>第七步</h2><p>hexo相关操作及部署到github上可以详见视频，除了第五步出现了些视频中没有的问题，其他都和视频里一样，视频链接见最后的参考<br>（详细版以及截图，想起来我会补充的^_^）</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>参考了B站up主codesheep老师的视频，很详细<br><a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1Yb411a7ty</a></p>
-
+        <h2 id="第一步-安装Node-js"><a href="#第一步-安装Node-js" class="headerlink" title="第一步 安装Node.js"></a>第一步 安装Node.js</h2><p>这一步直接在Node.js官网上下载最新的LTS版本，安装即可</p>
+        
+          <a class="article-more-a" href="/2020/07/04/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/#more">more >></a>
+        
       
 
       
@@ -171,12 +165,19 @@
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/04/hexo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">展开全文 >></a>
-        </p>
+
       
 
       
@@ -226,19 +227,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
+          <a class="article-more-a" href="/2020/07/04/hello-world/#more">more >></a>
+        
       
 
       
@@ -248,10 +239,6 @@
       
       
 
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/07/04/hello-world/">展开全文 >></a>
-        </p>
       
 
       
@@ -371,6 +358,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
